@@ -5,3 +5,17 @@ body {
   background-image: url('./images/sw-bg.jpg');
   background-size: cover;
 }
+
+@font-face {
+  font-family: Star-Wars;
+  src: url(swfont.ttf);
+}
+
+@font-face{
+  font-family: Anakin;
+  src: url(anakinfont.ttf);
+}
+/* 
+h1 {
+  font-family: Star-Wars;
+} */
