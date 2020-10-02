@@ -1,9 +1,11 @@
-import React, {useEffect} from 'react';
+import React, {useState} from 'react';
 import styled from "styled-components";
 import './App.css';
 import Character from './components/Character';
 
+
 const App = () => {
+  
   // Try to think through what state you'll need for this app before starting. Then build out
   // the state properties here.
 
@@ -15,8 +17,8 @@ const App = () => {
   `;
   return (
     <div className="App">
-      <h1 className="Header">Characters</h1>
-      <Character></Character>
+      <h1 className="Header">STAR WARS Characters</h1>
+      <Character />
     </div>
   );
 }
