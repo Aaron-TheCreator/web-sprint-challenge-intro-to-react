@@ -8,9 +8,10 @@ function Character() {
     // const { setChar } = props;
 
     // API http https://swapi.dev/api/people/
-    useEffect(() => {
+    useState(() => {
         axios
             .get("https://swapi.dev/api/people/")
+            // .get("https://swapi.py4e.com/api/people/")
             .then(res => {
                 // console.log(res.data.results)
                 // console.log(char.data.results);

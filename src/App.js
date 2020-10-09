@@ -3,6 +3,12 @@ import styled from "styled-components";
 import './App.css';
 import Character from './components/Character';
 
+const StyledCont =styled.div`
+display: flex;
+flex-flow: column;
+justify-content: center;
+
+`;
 
 const App = () => {
   
@@ -12,14 +18,12 @@ const App = () => {
   // Fetch characters from the API in an effect hook. Remember, anytime you have a 
   // side effect in a component, you want to think about which state and/or props it should
   // sync up with, if any.
-  const StyledDiv = styled.div`
-  display:flex;
-  `;
+  
   return (
-    <div className="App">
+    <StyledCont className="App">
       <h1 className="Header">STAR WARS Characters</h1>
       <Character />
-    </div>
+    </StyledCont>
   );
 }
 
